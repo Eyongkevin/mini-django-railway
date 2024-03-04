@@ -12,3 +12,12 @@ dev-install:
 	pip install -r requirements/dev.txt
 dev-test:
 	python3 manage.py test --settings=config.settings.dev
+
+prod-install:
+	pip install -r requirements/prod.txt
+prod-migrate:
+	python3 manage.py migrate --settings=config.settings.prod
+prod-superuser:
+	python3 manage.py createsuperuser --settings=config.settings.prod
+prod-collectstatic:
+	python3 manage.py collectstatic --settings=config.settings.prod

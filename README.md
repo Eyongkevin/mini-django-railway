@@ -108,3 +108,12 @@ In the apps/ directory, we have an app called `core` and this should contain com
 In order to run some very long commands using shortcuts, we have a `Makefile` that contains some commands for makemigrations, migration, installation, runserver and so on.
 
 To run a command from the Makefile, we just run `make <command-name>` where `<command-name>` is a command in the Makefile
+
+# Hosting on Railway
+
+## Required packages
+
+- gunicorn
+- dj-database-url
+- psycop2-binary
+- whitenoise
