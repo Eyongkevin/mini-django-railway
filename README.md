@@ -117,3 +117,8 @@ To run a command from the Makefile, we just run `make <command-name>` where `<co
 - dj-database-url
 - psycop2-binary
 - whitenoise
+
+## Two files that are required
+
+- Procfile: Helps in running our django project
+- runtime.txt [optional] # Indiciate what Python version you are using

@@ -21,3 +21,5 @@ prod-superuser:
 	python3 manage.py createsuperuser --settings=config.settings.prod
 prod-collectstatic:
 	python3 manage.py collectstatic --settings=config.settings.prod
+prod-gunicorn:
+	gunicorn config.wsgi --env DJANGO_SETTINGS_MODULE=config.settings.prod
