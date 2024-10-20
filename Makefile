@@ -22,4 +22,4 @@ prod-superuser:
 prod-collectstatic:
 	python3 manage.py collectstatic --settings=config.settings.prod
 prod-gunicorn:
-	gunicorn config.wsgi --env DJANGO_SETTINGS_MODULE=config.settings.prod -c config/prod/prod.py --log-file -
+	gunicorn  --env DJANGO_SETTINGS_MODULE=config.settings.prod --bind 0.0.0.0:8000 -c config/prod/prod.py --log-file -
